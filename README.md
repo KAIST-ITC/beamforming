@@ -3,7 +3,7 @@
 **본 과제는 과학기술정보통신부에서 시행한 정보통신,방송연구개발사업의 결과입니다.**
 
 
-This project implements a beamforming simulation system on FPGAs. Both the TX and the RX sides use Xilinx VC707 boards, and the TX and the RX VC707 boards are hardwired with FMC-to-FMC cable as shown below. RX FPGA logic runs with the clock generated in the TX FPGA. This project checks whether the RX side properly restores the selected datastream, even though the RX receives all 4 datastreams.
+This project implements a beamforming simulation system on FPGAs. Both the TX and the RX sides use Xilinx VC707(Virtex-7 XC7VX485T) boards, and the TX and the RX VC707 boards are hardwired with FMC-to-FMC cable as shown below. RX FPGA logic runs with the clock generated in the TX FPGA. This project checks whether the RX side properly restores the selected datastream, even though the RX receives all 4 datastreams.
 
 The figure below summarizes what consists of a simple beamforming system. In this system, the TX has 4 linear subarray antennas, and each subarray consists of 8 antennas that sum up to total **32 antennas** in the TX system. The RX system has 1 linear subarray antenna, and it consists of **16 antennas**. From the TX side, it creates four beams with different directions for four datastream, and the RX chooses one of the datastream by properly setting the theta. 
 
